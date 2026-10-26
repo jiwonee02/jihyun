@@ -29,3 +29,8 @@
 @media(max-width:1000px){.history-editorial{grid-template-columns:1fr 1.5fr;gap:5%}.history-narrative .timeline{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem 1rem}.history-collage{height:35svh}}
 @media(max-width:680px){.history-editorial{grid-template-columns:1fr;gap:2rem}.history-intro h2{font-size:1.9rem}.history-page .history-intro blockquote{font-size:.75rem}.history-location{margin-top:1.5rem}.history-location>.document-image{max-height:26svh}.history-collage{height:30svh;min-height:13rem}.history-narrative .timeline p{font-size:.65rem}.history-page .page-inner{padding-top:3rem}}
 .history-location>.document-image{aspect-ratio:852/591}.history-collage{display:flex;flex-direction:column}.history-collage>.document-image{flex:1;min-height:0}.history-collage>p{font-size:.6rem;color:#839599;line-height:1.9;margin-top:.8rem}
+.comparison-after .picture img{object-fit:contain;background:#fff}
+
+
+/* Hide fine seams at the outside edge of the drawing layer. */
+.comparison-frame,.comparison-after,.comparison-after .picture,.comparison-after img{border:0;box-shadow:none}.comparison-after{background:#fff}.comparison-after:after{content:'';position:absolute;inset:0;border:2px solid #fff;pointer-events:none}
