@@ -34,3 +34,8 @@
 
 /* Hide fine seams at the outside edge of the drawing layer. */
 .comparison-frame,.comparison-after,.comparison-after .picture,.comparison-after img{border:0;box-shadow:none}.comparison-after{background:#fff}.comparison-after:after{content:'';position:absolute;inset:0;border:2px solid #fff;pointer-events:none}
+.comparison-frame>.picture img{object-fit:contain;background:#fff}
+/* Portrait comparison sized to the supplied site photo and drawing. */
+.comparison-page .page-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;justify-content:normal;gap:4%;padding:4rem 8% 5rem}.comparison-title{display:block;max-width:35rem}.comparison-title>.section-label{margin-bottom:1.4rem}.comparison-title h2{font-size:clamp(2rem,3.5vw,4rem);line-height:1.5}.comparison-title>p:not(.section-label){font-size:.75rem;line-height:2;margin:1.8rem 0 0;max-width:24rem}.comparison-frame{width:min(100%,55svh);height:auto;aspect-ratio:796/1205;margin:0;justify-self:center;background:#fff}.comparison-frame .picture img{object-fit:contain;object-position:center;background:#fff}.compare-label{top:.75rem;padding:.3rem .6rem;background:#ffffffdf}.compare-label.left{left:.75rem}.compare-label.right{right:.75rem}
+@media(max-width:680px){.comparison-page .page-inner{display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:1.8rem;padding:3rem 8% 4.5rem}.comparison-title{max-width:none}.comparison-title>.section-label{margin-bottom:1rem}.comparison-title h2{font-size:clamp(1.8rem,6.5vw,2.5rem)}.comparison-title>p:not(.section-label){font-size:.65rem;margin-top:1rem}.comparison-frame{align-self:center;flex:none;width:min(100%,49svh);height:auto;min-height:0;margin:0}.compare-label{font-size:.4rem}}
+
